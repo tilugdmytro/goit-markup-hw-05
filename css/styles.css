@@ -92,9 +92,25 @@ img{
     color: var(--accent-color);
 }
 
+.current::after {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    margin-bottom: -2px;
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+}
+
 .navigation-list {
     display: flex;
     align-items: center;
+}
+
+.navigation-item {
+    position: relative;
 }
 
 .navigation-item:not( :last-child) {
@@ -298,6 +314,28 @@ img{
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+}
+
+.activity-list-wrapper {
+    position: relative;
+}
+
+.activity-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
 }
 /* =========== END ACTIVITY =========== */
 
